@@ -6,7 +6,6 @@
 //  Copyright © 2017 NandN. All rights reserved.
 //
 
-#include <iostream>
 
 int main(int argc, const char * argv[]) {
     // insert code here...
