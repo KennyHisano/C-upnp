@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9B75E5679EA0DE14D2BC482A85D9FEA0D9A1E425",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BA85FE1EE5398956E9D424940AB678442F991406" : 9223372036854775807,
+    "9B75E5679EA0DE14D2BC482A85D9FEA0D9A1E425" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "23999A37-06F4-4396-986A-06576B7D66EC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BA85FE1EE5398956E9D424940AB678442F991406" : "",
+    "9B75E5679EA0DE14D2BC482A85D9FEA0D9A1E425" : "c++networking\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "c++networking",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "c++networking.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KennyHisano\/C-upnp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9B75E5679EA0DE14D2BC482A85D9FEA0D9A1E425"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KennyHisano\/truffleFront.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA85FE1EE5398956E9D424940AB678442F991406"
+    }
+  ]
+}
