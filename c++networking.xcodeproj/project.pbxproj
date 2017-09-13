@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68F39D2B1F5F924200E45513 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68F39D2A1F5F924200E45513 /* main.cpp */; };
+		683D25B21F68E19500533175 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 683D25AE1F68E19500533175 /* main.cpp */; };
+		683D25B31F68E19500533175 /* netaddress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 683D25B01F68E19500533175 /* netaddress.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		683D25A81F662F6900533175 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = compiled.air;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# metallib\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		68F39D251F5F924200E45513 /* CopyFiles */ = {
@@ -23,8 +36,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		683D25AE1F68E19500533175 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../../../.Trash/c++networking/main.cpp"; sourceTree = "<group>"; };
+		683D25AF1F68E19500533175 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main.h; path = "../../../../.Trash/c++networking/main.h"; sourceTree = "<group>"; };
+		683D25B01F68E19500533175 /* netaddress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = netaddress.cpp; path = "../../../../.Trash/c++networking/netaddress.cpp"; sourceTree = "<group>"; };
+		683D25B11F68E19500533175 /* netaddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = netaddress.h; path = "../../../../.Trash/c++networking/netaddress.h"; sourceTree = "<group>"; };
 		68F39D271F5F924200E45513 /* c++networking */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c++networking"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68F39D2A1F5F924200E45513 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +73,10 @@
 		68F39D291F5F924200E45513 /* c++networking */ = {
 			isa = PBXGroup;
 			children = (
-				68F39D2A1F5F924200E45513 /* main.cpp */,
+				683D25AE1F68E19500533175 /* main.cpp */,
+				683D25AF1F68E19500533175 /* main.h */,
+				683D25B01F68E19500533175 /* netaddress.cpp */,
+				683D25B11F68E19500533175 /* netaddress.h */,
 			);
 			path = "c++networking";
 			sourceTree = "<group>";
@@ -74,6 +93,7 @@
 				68F39D251F5F924200E45513 /* CopyFiles */,
 			);
 			buildRules = (
+				683D25A81F662F6900533175 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -119,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68F39D2B1F5F924200E45513 /* main.cpp in Sources */,
+				683D25B31F68E19500533175 /* netaddress.cpp in Sources */,
+				683D25B21F68E19500533175 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +240,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/miniupnpc/2.0.20170509/include/miniupnpc;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/miniupnpc/2.0.20170509/include,
+					/usr/local/Cellar/boost/1.65.1/include,
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -228,7 +253,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				HEADER_SEARCH_PATHS = /usr/local/Cellar/miniupnpc/2.0.20170509/include/miniupnpc;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/miniupnpc/2.0.20170509/include,
+					/usr/local/Cellar/boost/1.65.1/include,
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
